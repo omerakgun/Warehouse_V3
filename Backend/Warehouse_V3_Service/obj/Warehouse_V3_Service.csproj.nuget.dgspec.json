@@ -1,0 +1,188 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Service\\Warehouse_V3_Service.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj",
+        "projectName": "Warehouse_V3_Entity",
+        "projectPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj",
+        "packagesPath": "C:\\Users\\omer-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\omer-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj",
+        "projectName": "Warehouse_V3_Orm",
+        "projectPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj",
+        "packagesPath": "C:\\Users\\omer-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Orm\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\omer-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj": {
+                "projectPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Service\\Warehouse_V3_Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Service\\Warehouse_V3_Service.csproj",
+        "projectName": "Warehouse_V3_Service",
+        "projectPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Service\\Warehouse_V3_Service.csproj",
+        "packagesPath": "C:\\Users\\omer-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\omer-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj": {
+                "projectPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
