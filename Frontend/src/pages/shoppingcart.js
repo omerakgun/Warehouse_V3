@@ -28,7 +28,7 @@ function ShoppingCart(props) {
     axios.get(SHOPPING_BASE_URL + GET_ALL_SHOPPING_CART).then((response) => {
       setshoppingItems(response.data.slice());
     });
-  });
+  },[]);
 
   const deleteFromShoppingCart = (carID) => {
     axios
