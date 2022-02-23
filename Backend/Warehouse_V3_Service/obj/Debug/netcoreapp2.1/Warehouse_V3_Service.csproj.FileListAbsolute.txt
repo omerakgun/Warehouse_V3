@@ -26,3 +26,17 @@ C:\Users\omer-\OneDrive\Belgeler\GitHub\Warehouse_Project_V3\Backend\Warehouse_V
 C:\Users\omer-\OneDrive\Belgeler\GitHub\Warehouse_Project_V3\Backend\Warehouse_V3_Service\obj\Debug\netcoreapp2.1\Warehouse_V3_Service.csproj.CopyComplete
 C:\Users\omer-\OneDrive\Belgeler\GitHub\Warehouse_Project_V3\Backend\Warehouse_V3_Service\obj\Debug\netcoreapp2.1\Warehouse_V3_Service.dll
 C:\Users\omer-\OneDrive\Belgeler\GitHub\Warehouse_Project_V3\Backend\Warehouse_V3_Service\obj\Debug\netcoreapp2.1\Warehouse_V3_Service.pdb
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\bin\Debug\netcoreapp2.1\Warehouse_V3_Service.deps.json
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\bin\Debug\netcoreapp2.1\Warehouse_V3_Service.dll
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\bin\Debug\netcoreapp2.1\Warehouse_V3_Service.pdb
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\bin\Debug\netcoreapp2.1\Warehouse_V3_Entity.dll
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\bin\Debug\netcoreapp2.1\Warehouse_V3_Orm.dll
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\bin\Debug\netcoreapp2.1\Warehouse_V3_Orm.pdb
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\bin\Debug\netcoreapp2.1\Warehouse_V3_Entity.pdb
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\obj\Debug\netcoreapp2.1\Warehouse_V3_Service.csprojAssemblyReference.cache
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\obj\Debug\netcoreapp2.1\Warehouse_V3_Service.csproj.CoreCompileInputs.cache
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\obj\Debug\netcoreapp2.1\Warehouse_V3_Service.AssemblyInfoInputs.cache
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\obj\Debug\netcoreapp2.1\Warehouse_V3_Service.AssemblyInfo.cs
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\obj\Debug\netcoreapp2.1\Warehouse_V3_Service.csproj.CopyComplete
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\obj\Debug\netcoreapp2.1\Warehouse_V3_Service.dll
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Service\obj\Debug\netcoreapp2.1\Warehouse_V3_Service.pdb

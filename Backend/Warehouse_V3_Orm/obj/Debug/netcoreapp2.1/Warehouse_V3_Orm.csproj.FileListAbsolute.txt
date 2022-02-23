@@ -22,3 +22,15 @@ C:\Users\omer-\OneDrive\Belgeler\GitHub\Warehouse_Project_V3\Backend\Warehouse_V
 C:\Users\omer-\OneDrive\Belgeler\GitHub\Warehouse_Project_V3\Backend\Warehouse_V3_Orm\obj\Debug\netcoreapp2.1\Warehouse_V3_Orm.csproj.CopyComplete
 C:\Users\omer-\OneDrive\Belgeler\GitHub\Warehouse_Project_V3\Backend\Warehouse_V3_Orm\obj\Debug\netcoreapp2.1\Warehouse_V3_Orm.dll
 C:\Users\omer-\OneDrive\Belgeler\GitHub\Warehouse_Project_V3\Backend\Warehouse_V3_Orm\obj\Debug\netcoreapp2.1\Warehouse_V3_Orm.pdb
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\bin\Debug\netcoreapp2.1\Warehouse_V3_Orm.deps.json
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\bin\Debug\netcoreapp2.1\Warehouse_V3_Orm.dll
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\bin\Debug\netcoreapp2.1\Warehouse_V3_Orm.pdb
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\bin\Debug\netcoreapp2.1\Warehouse_V3_Entity.dll
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\bin\Debug\netcoreapp2.1\Warehouse_V3_Entity.pdb
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\obj\Debug\netcoreapp2.1\Warehouse_V3_Orm.csprojAssemblyReference.cache
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\obj\Debug\netcoreapp2.1\Warehouse_V3_Orm.csproj.CoreCompileInputs.cache
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\obj\Debug\netcoreapp2.1\Warehouse_V3_Orm.AssemblyInfoInputs.cache
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\obj\Debug\netcoreapp2.1\Warehouse_V3_Orm.AssemblyInfo.cs
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\obj\Debug\netcoreapp2.1\Warehouse_V3_Orm.csproj.CopyComplete
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\obj\Debug\netcoreapp2.1\Warehouse_V3_Orm.dll
+C:\Projects\Warehouse_V3\Backend\Warehouse_V3_Orm\obj\Debug\netcoreapp2.1\Warehouse_V3_Orm.pdb

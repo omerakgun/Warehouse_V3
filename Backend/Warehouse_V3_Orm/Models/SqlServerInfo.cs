@@ -8,5 +8,6 @@ namespace Warehouse_V3_Orm.Models
     {
         public string Server { get; set; }
         public string Database { get; set; }
+        public string SqLiteServer { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 {
   "Server": "localhost\\SQLEXPRESS",
-  "Database": "Warehouse_V3"
+  "Database": "Warehouse_V3",
+  "SqLiteServer": "Warehouse_V3.db"
 }

@@ -13,6 +13,24 @@ namespace Warehouse_V3_Orm.Repositories
     public class WarehouseRepository
     {
         public List<Warehouse> warehouseList = JArray.Parse(File.ReadAllText("warehouses.json")).ToObject<List<Warehouse>>();
+        private static Dictionary<int, CarDTO> carDictonary;
+        public static Dictionary<int, CarDTO> getCarDictionary()
+        {
+            if (carDictonary == null) {
+                carDictonary = new Dictionary<int, CarDTO>();
+            }
+
+            if(carDictonary.Count == 0) {
+                WarehouseRepository warehouseRepository = new WarehouseRepository();
+                List<CarDTO> carList = warehouseRepository.getAllCar();
+                foreach(CarDTO carDTO in carList) {
+                    if(!carDictonary.Keys.Contains(carDTO.CarID))
+                    carDictonary.Add(carDTO.CarID, carDTO);
+                }
+            }
+
+            return carDictonary;
+        }
         public List<WarehouseDTO> getAllWarehouse()
         {
             List<WarehouseDTO> resp = new List<WarehouseDTO>();

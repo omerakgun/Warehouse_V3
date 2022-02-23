@@ -1,7 +1,10 @@
 import React from "react";
 import axios from "axios";
 import CarItem from "../components/CarItem";
-const baseURL = "https://localhost:44383/api/warehouse/get-all-car";
+import {
+  WAREHOUSE_BASE_URL,
+  GET_ALL_CAR,
+} from "../constants/constants";
 
 class CarList extends React.Component {
   constructor(props) {
@@ -13,7 +16,7 @@ class CarList extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(baseURL).then((response) => {
+    axios.get(WAREHOUSE_BASE_URL+GET_ALL_CAR).then((response) => {
       this.setState({ cars: response.data });
     });
   }

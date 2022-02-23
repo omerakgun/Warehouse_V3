@@ -14,6 +14,8 @@ namespace Warehouse_V3_Service
         {
             WarehouseRepository warehouseRepository = new WarehouseRepository();
             List<WarehouseDTO> resp = warehouseRepository.getAllWarehouse();
+            ShoppingCartRepository shoppingCartRepository = new ShoppingCartRepository();
+            shoppingCartRepository.getAllShoppingCart();
             return resp;
         }
 

@@ -1,8 +1,19 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 import { connect, useStore } from "react-redux";
 import { bindActionCreators } from "redux";
-import { addShoppingCart,deleteShoppingCart,clearShoppingCart} from "../redux/actions/shoppingCartActions";
+import {
+  addShoppingCart,
+  deleteShoppingCart,
+  clearShoppingCart,
+} from "../redux/actions/shoppingCartActions";
+import {
+  USER_ID,
+  SHOPPING_BASE_URL,
+  ADD_CAR_TO_SHOPPING_CART,
+  CAR_LIST
+} from "../constants/constants";
 
 function CarDetail(props) {
   const navigate = useNavigate();
@@ -11,15 +22,23 @@ function CarDetail(props) {
 
   useEffect(() => {
     if (state == null) {
-      navigate("/carlist");
+      navigate(CAR_LIST);
     }
     console.log(state.carItem);
   });
 
   const addToShoppingCart = () => {
     props.actions.addShoppingCart(state.carItem);
-    navigate("/carlist");
-  }
+    axios
+      .post(SHOPPING_BASE_URL + ADD_CAR_TO_SHOPPING_CART, {
+        CarID: state.carItem.carID,
+        UserID: USER_ID,
+      })
+      .then((response) => {
+        navigate(CAR_LIST);
+      });
+    
+  };
 
   return (
     <>
@@ -70,25 +89,31 @@ function CarDetail(props) {
           <b>Price : &#8364;{state.carItem.price}</b>
         </div>
         <div style={{ marginTop: 5 }}>
-          <button onClick={() => {addToShoppingCart()}}>Add Shopping Cart</button>
+          <button
+            onClick={() => {
+              addToShoppingCart();
+            }}
+          >
+            Add Shopping Cart
+          </button>
         </div>
       </div>
     </>
   );
 }
 
-const mapStateToProps = state => {
-    return {
-      shoppingCartState: state.shoppingCartState,
-    };
+const mapStateToProps = (state) => {
+  return {
+    shoppingCartState: state.shoppingCartState,
   };
-  
-  const ActionCreators = Object.assign(
-    {},
-    {addShoppingCart, deleteShoppingCart, clearShoppingCart },
-  );
-  const mapDispatchToProps = dispatch => {
-    return {actions: bindActionCreators(ActionCreators, dispatch)};
-  };
-  
-  export default connect(mapStateToProps, mapDispatchToProps)(CarDetail);
+};
+
+const ActionCreators = Object.assign(
+  {},
+  { addShoppingCart, deleteShoppingCart, clearShoppingCart }
+);
+const mapDispatchToProps = (dispatch) => {
+  return { actions: bindActionCreators(ActionCreators, dispatch) };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CarDetail);

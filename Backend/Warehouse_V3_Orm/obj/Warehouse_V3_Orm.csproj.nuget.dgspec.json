@@ -1,34 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj": {}
+    "C:\\Projects\\Warehouse_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj": {
+    "C:\\Projects\\Warehouse_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj",
+        "projectUniqueName": "C:\\Projects\\Warehouse_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj",
         "projectName": "Warehouse_V3_Entity",
-        "projectPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj",
+        "projectPath": "C:\\Projects\\Warehouse_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj",
         "packagesPath": "C:\\Users\\omer-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\obj\\",
+        "outputPath": "C:\\Projects\\Warehouse_V3\\Backend\\Warehouse_V3_Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\omer-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -39,55 +42,64 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
-            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj": {
+    "C:\\Projects\\Warehouse_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj",
+        "projectUniqueName": "C:\\Projects\\Warehouse_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj",
         "projectName": "Warehouse_V3_Orm",
-        "projectPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj",
+        "projectPath": "C:\\Projects\\Warehouse_V3\\Backend\\Warehouse_V3_Orm\\Warehouse_V3_Orm.csproj",
         "packagesPath": "C:\\Users\\omer-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Orm\\obj\\",
+        "outputPath": "C:\\Projects\\Warehouse_V3\\Backend\\Warehouse_V3_Orm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\omer-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj": {
-                "projectPath": "C:\\Users\\omer-\\OneDrive\\Belgeler\\GitHub\\Warehouse_Project_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj"
+              "C:\\Projects\\Warehouse_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj": {
+                "projectPath": "C:\\Projects\\Warehouse_V3\\Backend\\Warehouse_V3_Entity\\Warehouse_V3_Entity.csproj"
               }
             }
           }
@@ -99,21 +111,34 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.1.4, )"
+              "version": "[3.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[2.1.4, )"
+              "version": "[3.0.0, )"
             },
-            "Microsoft.NETCore.App": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
+              "version": "[3.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -121,10 +146,21 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

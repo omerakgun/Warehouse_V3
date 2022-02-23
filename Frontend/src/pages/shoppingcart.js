@@ -9,30 +9,54 @@ import {
   deleteShoppingCart,
   clearShoppingCart,
 } from "../redux/actions/shoppingCartActions";
+import axios from "axios";
+import {
+  USER_ID,
+  SHOPPING_BASE_URL,
+  GET_ALL_SHOPPING_CART,
+  DELETE_CAR_FROM_SHOPPING_CART,
+  COMPLETE_SHOPPING_CART,
+  HEADER_CONFIG,
+  CAR_LIST
+} from "../constants/constants";
 
 function ShoppingCart(props) {
   const navigate = useNavigate();
-  const { state } = useLocation();
+  const [shoppingItems, setshoppingItems] = useState([]);
 
   useEffect(() => {
-    // if (state == null) {
-    //   navigate("/carlist");
-    // }
-    // console.log(state.carItem);
+    axios.get(SHOPPING_BASE_URL + GET_ALL_SHOPPING_CART).then((response) => {
+      setshoppingItems(response.data.slice());
+    });
   });
 
   const deleteFromShoppingCart = (carID) => {
-    props.actions.deleteShoppingCart(carID);
+    axios
+      .post(
+        SHOPPING_BASE_URL + DELETE_CAR_FROM_SHOPPING_CART,
+        carID,
+        HEADER_CONFIG
+      )
+      .then((response) => {
+        axios
+          .get(SHOPPING_BASE_URL + GET_ALL_SHOPPING_CART)
+          .then((response) => {
+            setshoppingItems(response.data.slice());
+          });
+      });
   };
 
-  const clearShoppingCart = (carID) => {
-    props.actions.clearShoppingCart(carID);
-    navigate("/carlist");
+  const buyShoppingCart = (userID) => {
+    axios
+      .post(SHOPPING_BASE_URL + COMPLETE_SHOPPING_CART, userID, HEADER_CONFIG)
+      .then((response) => {
+        navigate(CAR_LIST);
+      });
   };
 
   const getShoppingTotalPrice = () => {
     let totalPrice = 0;
-    for (let carItem of props.shoppingCartState.shoppingCartItems) {
+    for (let carItem of shoppingItems) {
       totalPrice += carItem.price;
     }
     return totalPrice;
@@ -80,11 +104,11 @@ function ShoppingCart(props) {
           </div>
         </div>
         <div style={{ marginTop: 7 }}>
-          {props.shoppingCartState.shoppingCartItems.map((car) => (
-            <div key={car.carID} style={{ marginTop: 20, display: "block" }}>
+          {shoppingItems.map((car) => (
+            <div key={car.id} style={{ marginTop: 20, display: "block" }}>
               <CarItem car={car} />
               <div style={{ position: "right", display: "flex", width: "10%" }}>
-                <button onClick={() => deleteFromShoppingCart(car.carID)}>
+                <button onClick={() => deleteFromShoppingCart(car.id)}>
                   Delete
                 </button>
               </div>
@@ -94,7 +118,7 @@ function ShoppingCart(props) {
         <div style={{ marginTop: 20 }}>
           <b>Total Price : &#8364;{getShoppingTotalPrice()}</b>
         </div>
-        <button onClick={() => clearShoppingCart()}>Buy Now !</button>
+        <button onClick={() => buyShoppingCart(USER_ID)}>Buy Now !</button>
       </div>
     </>
   );
